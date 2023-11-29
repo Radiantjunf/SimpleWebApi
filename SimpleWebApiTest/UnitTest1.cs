@@ -13,5 +13,14 @@ namespace SimpleWebApiTest
             Assert.NotNull(t);
 
         }
+
+        [Fact]
+        public void Test2()
+        {
+            WeatherForecastController asd = new WeatherForecastController(null);
+            var t = asd.Get();
+            Assert.NotNull(t);
+
+        }
     }
 }
